@@ -1,0 +1,312 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+         *{
+            margin:0;
+            padding: 0;
+        } 
+        th{
+        border:1px solid black ;  
+         text-align: center;
+         padding: 10px 5px;
+       }    
+        
+        body{
+         
+          max-width: 900px;
+          width: 100%;  
+           margin:auto ; 
+           }
+           table{
+        /* border: 2px solid blue; */
+       border-collapse: collapse;
+       width: 100%;
+       font-size: larger;
+       }
+      td{
+        border:1px solid black ;  
+         text-align: center;
+         padding: 10px 5px;
+       }
+       tr:hover{
+          background-color: #43e5a0;
+       }    
+       div{
+        margin-top: 25px;
+      }
+      .ram {
+       cursor: pointer;
+    /* border-bottom: 2px solid blue; */
+    font-size: 20px;
+    color: #537dea;
+ }
+ .ram1{
+    cursor: pointer;
+    /* border-bottom: 2px solid blue; */
+    font-size: 20px;
+    color:#537dea;
+}
+ h4{
+  font-size:30px ;
+ }
+
+           
+    </style>
+</head>
+<body>
+    <script>
+       
+         
+
+
+        var rootelement=document.createElement('div');
+        // rootelement.style.marginTop="50px";
+        var myh1=document.createElement('h1');
+        myh1.innerHTML="NAKKA RAMANJANEYULU";
+        myh1.style.borderBottom="5px solid #537dea"
+        myh1.style.color="#537dea";
+        myh1.style.fontSize="50px";
+        myh1.style.marginTop="60px";
+       rootelement.appendChild(myh1);
+
+        var root2=document.createElement('div');
+        // root2.style.marginTop="40px";
+        var myp=document.createElement('h2');
+        myp.innerHTML="Kurichedu 523304 || <br> +91 8341624583";
+        myp.style.fontStyle="bolder";
+        myp.style.fontSize="20px";
+        root2.appendChild(myp);
+
+         var ram=document.createElement('p');
+        // ram.innerHTML="nakkaramanjaneyulu143@gmail.com";
+          ram.classList.add('ram'); 
+        var mail=document.createElement('a')
+        // mail.href="https://nakkaramanjaneyulu143@gmail.com";
+        mail.innerHTML="nakkaramanjaneyulu143@gmail.com";
+        mail.style.color="blue";
+       
+          ram.appendChild(mail);
+
+         var ram1=document.createElement('p');
+        //  ram1.innerHTML="https://github.com/nakkaramanji";
+         ram1.classList.add('ram1'); 
+        root2.appendChild(ram);
+        var link=document.createElement('a');
+         link.href = "https://github.com/nakkaramanji"; 
+         link.innerHTML="https://github.com/nakkaramanji";
+        link.style.color="blue";
+        ram1.appendChild(link);
+        // ram.style.borderBottom="2px solid blue";
+        // ram.style.fontSize="20px";
+        // ram.style.color="blue";
+         root2.appendChild(ram1);
+
+        var ram1=document.createElement('p');
+        ram1.innerHTML="Passionate Full Stack Developer, proficient in front-end and back-end technologies. Committed to crafting user-friendly applications and staying at the forefront of innovation. I am committed to delivering exceptional user experiences, while continuously refining my knowledge to stay at the forefront of cutting-edge technologies. Let's build exceptional solutions together.";
+        ram1.style.marginTop="30px";
+        ram1.style.fontSize="20px";
+        root2.appendChild(ram1);
+
+        var div=document.createElement('div');
+        var h1=document.createElement('h4');
+        h1.innerHTML="Education";
+        // h1.style.fontSize="25px";
+        // h1.style.marginTop="20px";
+        div.appendChild(h1);
+
+        var table=document.createElement('table');
+         table.style.border="2px solid black";
+        table.style.padding="20px";
+        
+        table.style.marginTop="10px";
+        div.appendChild(table);
+
+        var thead=document.createElement('thead');
+        thead.style.alignItems="center";
+        thead.style.fontSize="20px";
+        table.appendChild(thead);
+
+
+        var tr=document.createElement('tr');
+       
+        thead.appendChild(tr);
+        
+        
+        var th=document.createElement('th')
+       
+        tr.appendChild(th);
+         th.innerHTML="COURSE";
+
+         var th1=document.createElement('th')
+         tr.appendChild(th1);
+         th1.innerHTML="SCHOOL/<br> COLLEGE";
+
+         var th2=document.createElement('th')
+         tr.appendChild(th2);
+         th2.innerHTML="BOARD / UNIVERSIITY";
+
+         var th3=document.createElement('th')
+         tr.appendChild(th3);
+         th3.innerHTML="ACADEMIC YEAR";
+        
+         var th4=document.createElement('th')
+         tr.appendChild(th4);
+         th4.innerHTML="AGGREGATE";
+        
+        var tbody=document.createElement('tbody')
+        table.appendChild(tbody);
+        
+
+        var tr=document.createElement('tr')
+        tr.style.fontSize="20px";
+        tbody.appendChild(tr);
+
+        var td=document.createElement('td')
+        tr.appendChild(td);
+        td.innerHTML="S.S.C";
+
+        var td1=document.createElement('td')
+        tr.appendChild(td1);
+        td1.innerHTML="z.p.high.school kalluru";
+
+        var td2=document.createElement('td')
+        tr.appendChild(td2);
+        td2.innerHTML="Board of secondary education A.P";
+
+        var td3=document.createElement('td')
+        tr.appendChild(td3);
+        td3.innerHTML="2018";
+
+        var td4=document.createElement('td')
+        tr.appendChild(td4);
+        td4.innerHTML="8.7 CGPA";
+
+        var tr1=document.createElement('tr')
+        tr1.style.fontSize="20px";
+        tbody.appendChild(tr1);
+
+        var td=document.createElement('td')
+        td.innerHTML="INTERMEDIATE";
+        tr1.appendChild(td);
+
+        var td1=document.createElement('td')
+        td1.innerHTML="Sri gowthami jr.college, darsi";
+        tr1.appendChild(td1);
+
+        var td2=document.createElement('td')
+        td2.innerHTML="Board of intermediate Education A.P";
+        tr1.appendChild(td2);
+
+        var td3=document.createElement('td')
+        td3.innerHTML="2020";
+        tr1.appendChild(td3);
+
+
+        var td4=document.createElement('td')
+        td4.innerHTML="9.21%";
+        tr1.appendChild(td4);
+
+        var tr2=document.createElement('tr')
+        tr2.style.fontSize="20px";
+        tbody.appendChild(tr2);
+
+
+         var td=document.createElement('td')
+         td.innerHTML="B.SC COMPUTERS"
+         tr2.appendChild(td);
+
+         var td1=document.createElement('td')
+         td1.innerHTML="Sri gowthami degree college,darsi"
+         tr2.appendChild(td1);
+
+
+         var td2=document.createElement('td')
+         td2.innerHTML="Acharya Nagarjuna University"
+         tr2.appendChild(td2);
+
+         var td3=document.createElement('td')
+         td3.innerHTML="2023"
+         tr2.appendChild(td3);
+
+         var td4=document.createElement('td')
+         td4.style.alignItems="center";
+         td4.innerHTML="7.8%"
+         tr2.appendChild(td4);
+     
+         var exp=document.createElement('div')
+         exp.style.fontSize="25px"
+        //  exp.style.marginTop="25px"
+         var eh=document.createElement('h4')
+         eh.innerHTML="Experience"
+         exp.appendChild(eh);
+         var ep=document.createElement('p')
+         ep.innerHTML="2022 || completed a 6-week internship on Salesforce supported virtual internship program"
+         exp.appendChild(ep)
+
+         var proj=document.createElement('div')
+         proj.style.fontSize="25px"
+        //  proj.style.marginTop="20px"
+         var phe=document.createElement('h4')
+         phe.innerHTML="Projects"
+         proj.appendChild(phe);
+         var pp=document.createElement('p')
+         pp.innerHTML="creating website for sales";
+         pp.style.fontSize="27px";
+         pp.style.fontStyle="bolder"
+         proj.appendChild(pp);
+         var pc=document.createElement('p')
+         pc.innerHTML="I have developed a website for sales. This website used two major Technologies. These are HTML5, and CSS3."
+         proj.appendChild(pc);
+
+         var skills=document.createElement('div')
+         skills.style.fontSize="25px"
+        //  skills.style.marginTop="25px"
+         var sh=document.createElement('h4')
+         sh.innerHTML="Skills"
+        
+         skills.appendChild(sh);
+         var sc=document.createElement('ul')
+         sc.style.marginLeft="25px"
+         skills.appendChild(sc);
+         var scl=document.createElement('li')
+
+          scl.innerHTML="C"
+        sc.appendChild(scl) 
+        var scl1=document.createElement('li')
+          scl1.innerHTML="C++"
+          sc.appendChild(scl1) 
+        
+          var scl2=document.createElement('li')
+          scl2.innerHTML="MongoDB"
+          sc.appendChild(scl2) 
+
+          var scl3=document.createElement('li')
+          scl3.innerHTML="sql"
+          sc.appendChild(scl3) 
+
+
+         var container=document.createElement('div');
+           container.style.height="150vh";
+           container.style.width="100%";
+           
+         
+           
+          container.appendChild(rootelement);
+          container.appendChild(root2);
+          container.appendChild(div);
+          container.appendChild(exp);
+          container.appendChild(proj);
+          container.appendChild(skills);
+
+
+           document.body.appendChild(container);
+           console.log(container);
+        
+        
+    </script>
+</body>
+</html>   
